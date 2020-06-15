@@ -13,6 +13,7 @@ RUN npm install
 
 # Test build arg
 ARG FOOD
+ENV FOOD=$FOOD
 RUN echo "Oh dang look at that $FOOD"
 
 # Copy app source
