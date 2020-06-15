@@ -11,6 +11,10 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Test build arg
+ARG FOOD
+RUN echo "Oh dang look at that $FOOD"
+
 # Copy app source
 COPY . .
 
